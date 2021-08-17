@@ -1,0 +1,1 @@
+__all__ = ['apptest_pb2', 'apptest_pb2_grpc']

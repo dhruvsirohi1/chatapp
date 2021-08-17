@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+service ChatService {
+    rpc Register(SignUpRequest) returns (SignUpResponse);
+    rpc Login(LoginRequest) returns (LoginResponse);
+    rpc LogOut(LogOutRequest) returns (LogOutResponse);
+    rpc Text(TextRequest) returns (TextResponse);
+    rpc ChatStream(Empty) returns (stream Message);
+    rpc FetchUsers(getUsersRequest) returns (stream getUsersResponse);
+    rpc fetchLog(logRequest) returns (stream logResponse);
+}
+
+message User {
+    string id = 1;
+    string name = 2;
+    string email = 3;
+}
+
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message LoginResponse {
+    bool success = 1;
+    string token = 2;
+}
+
+message LogOutRequest {
+    string username = 1;
+    string token = 2;
+}
+
+message LogOutResponse {
+    bool success = 1;
+}
+
+message SignUpRequest {
+    string name = 1;
+    string email = 2;
+    string username = 3;
+    string password = 4;
+}
+
+message SignUpResponse {
+    bool success = 1;
+}
+
+message TextRequest {
+    
+    string text = 1;
+    string username = 2;
+    string timestamp = 3;
+}
+
+message TextResponse {
+    bool accepted = 1;
+}
+
+message Message {
+    string senderName = 1;
+    string content = 2;
+    string timestamp = 3;
+}
+
+message SelectFriend {
+    string friendname = 1;
+    string token = 2;
+}
+
+message SelectFriendResponse {
+    bool auth = 1;
+}
+
+message getUsersRequest {
+    string token = 1;
+}
+
+message getUsersResponse {
+    User user = 1;
+}
+
+message logRequest {
+    string username = 1;
+    string friendname = 2;
+    string friendid = 3;
+    string token = 4;
+}
+
+message logResponse {
+    string senderName = 1;
+    string content = 2;
+    string timestamp = 3;
+}
+
+message Empty {
+    
+}
