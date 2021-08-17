@@ -4,13 +4,7 @@
 <img src="./assets/images/homescreen.png" width="190"/>          
 <img src="./assets/images/chatscreen.png" width="190"/>
 
-This version of the app has all the basic requirements of the assessment implemented and working (screen capture(s) attached). Here I go through the following:
 
-<li> Project Structure / Implementation <li\>
-<li> Current Issues<li\>
-<li> Usage<li\>
-<li> Future improvements<li\>
-<br/><br/>
 
 ## Current Implementation:
 
