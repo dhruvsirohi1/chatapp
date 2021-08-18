@@ -13,7 +13,7 @@
 <li> <u>Database</u>: postgreSQL</li>
 <li> <u>Protocol</u>: gRPC</li>
 <br/><br/>
-This is a very naive implementation of what is a chat room, much like Discord *LITE*.
+This is a very naive implementation of what is a chat room, much like Discord, but *LITE*.
 
 ## Database:
 <li>
