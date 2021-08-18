@@ -1,3 +1,5 @@
+// Main page once the user successfully logs in.
+
 import 'dart:async';
 import 'dart:math';
 
