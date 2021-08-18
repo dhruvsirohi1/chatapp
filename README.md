@@ -8,7 +8,7 @@
 
 ## Current Implementation:
 
-<li> <u>Front-end</u>: Flutter, some simulator (I used iOS 14.5 on iPhone 11)</li>
+<li> <u>Front-end</u>: Flutter, some simulator (I used iOS emulator running version 14.5 on iPhone 11)</li>
 <li> <u>Back-end</u>: Python</li>
 <li> <u>Database</u>: postgreSQL</li>
 <li> <u>Protocol</u>: gRPC</li>
